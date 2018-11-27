@@ -1,0 +1,12 @@
+- Imagens sísmicas (detecção de sal, dataset do Kaggle).
+- Interpretar filtros produzidos por CNN (keras): https://jacobgil.github.io/deeplearning/filter-visualizations
+- Usar solução (imagem binária) como máscara
+	1. montar histograma de intensidade da parte com sal x parte sem sal, para verificar se existe diferença entre eles https://docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/histogram_calculation/histogram_calculation.html
+	2. comparar espectro de frequência
+	3. texturas: identificar distribuição de "textons" (slide 19 do arquivo 9A-L3)
+
+Obs: Remover o fundo preto e "replicar" a imagem
+
+- histograma de intensidade: utilizar um conjunto grande de imagens juntas para forma o histograma da parte com sal e da parte sem sal
+- visualizar as primeiras camadas da rede neural (sempre verificando como ele aprender a parte que tem sal)
+- a visualização das camadas pode ajudar para a identificação das texturas (textons)
